@@ -36,8 +36,10 @@ namespace AnimalKingdom
             {
                 Console.Write($"{anim.GetType().Name} {anim.Sound()}\n");
 
+                //Check if animal is X
                 if (anim is IMammal)
                 {
+                    // treat anim as IMammal and check what's asked
                     Console.WriteLine($"{(anim as IMammal).NumberOfNipples}\n");
                 }
                 if (anim is ICanFly)
